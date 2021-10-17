@@ -22,7 +22,7 @@ for i in range(0, stocks):
     while errorHappend == True:
         new = input("Ticker Symbol: ")
         try:
-            print(si.get_live_price(new))
+            si.get_live_price(new)
             errorHappend = False
         except:
             print("The Ticker Symbol", new, "Does not exist")
@@ -35,7 +35,8 @@ for i in range(0, stocks):
 
     if new in tickers:
         while new in tickers:
-            new = input(new, "is already in the portfolioo, try other Ticker Symbol plz: ")
+            print(new,"is already in the portfolio, try other Ticker Symbol plz: ")
+            new = input("other ticker symbol: ")
 
     tickers.append(new)
     temp.append(new)
