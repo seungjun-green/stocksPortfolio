@@ -11,7 +11,7 @@ totalValue = 0
 
 stocks = 0
 percentage = []
-headers = ["Ticker", "Shares", "Market Value", "Percentage"]
+headers = ["Ticker", "Shares", "Market Value".  , "Percentage"]
 stocks = int(input("How many ticker symbols? : "))
 valueInDollar = ''
 errorHappend = True
